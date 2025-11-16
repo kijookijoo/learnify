@@ -1,11 +1,16 @@
 .item-container {
     width: 100%;
     aspect-ratio: 1 / 1;
-    background-color: bisque;
+    background-image: url('/stickynote.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
     border-style: solid;
-    border-color: black;
+    border-color: transparent;
     border-radius: 10px;
     padding: 12px;
+    padding-top: 40px;
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -22,6 +27,6 @@
     border-radius: 999px;
     font-size: 12px;
 }
-.item-actions { margin-top: auto; display: flex; gap: 8px; }
+.item-actions { margin-top: auto; display: flex; gap: 8px; justify-content: flex-end; margin-bottom: 8px; }
 .btn { padding: 6px 10px; border: 1px solid #111; background: #fff; border-radius: 6px; cursor: pointer; }
 .btn-primary { background: #06d6a0; border-color: #06d6a0; color: #fff; }

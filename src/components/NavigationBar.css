@@ -11,6 +11,23 @@
     border-right: 1px solid #e5e5e5;
 }
 
+.navigation-brand {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 12px 16px 4px 16px;
+}
+
+.navigation-icon {
+    width: 205px;
+    object-fit: contain;
+}
+
+.navigation-item-wrapper {
+    position: relative;
+    display: block;
+}
+
 .navigation-item {
     font-size: 20px;
     font-family: "Elms Sans", sans-serif;
@@ -33,4 +50,15 @@
 .navigation-item:focus-visible {
     outline: 3px solid rgba(17, 24, 39, 0.25);
     outline-offset: 2px;
+}
+
+.nav-dot {
+    position: absolute;
+    top: 6px;
+    right: 10px;
+    width: 10px;
+    height: 10px;
+    border-radius: 999px;
+    background: #ef4444;
+    box-shadow: 0 0 0 2px #f5f5f5;
 }

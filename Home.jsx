@@ -4,7 +4,7 @@ export function Home({ sessions, credits, streak, onLike }) {
     return (
         <>
         <div className='topbar'>
-            <div className='brand'>Skilllift</div>
+            <div className='brand'>Mentee</div>
             <input className='search' placeholder='Search sessions...' />
             <div className='filters'>
                 <span>Credits: {credits}</span>
