@@ -16,7 +16,10 @@
     gap: 8px;
     margin: 0;
     box-sizing: border-box;
+    transition: transform .15s ease;
 }
+
+.item-container:hover { transform: scale(1.03); }
 
 .item-title { font-weight: 700; }
 .item-desc { color: #333; font-size: 14px; }

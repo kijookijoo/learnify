@@ -15,7 +15,7 @@ export function Schedule({ scheduled = [] }) {
                 </div>
             )}
             {scheduled.map(s => (
-                <div key={s.id} className="note-card" style={{
+                <div key={s.id} className="schedule-card" style={{
                     padding: 12,
                     display: 'flex',
                     flexDirection: 'column',
