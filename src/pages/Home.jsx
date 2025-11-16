@@ -1,18 +1,37 @@
+import { useMemo, useState } from 'react'
 import { Item } from '../components/Item'
 
 export function Home({ sessions, credits, streak, onLike }) {
+    const [searchQuery, setSearchQuery] = useState('')
+
+    const filteredSessions = useMemo(() => {
+        const q = searchQuery.trim().toLowerCase()
+        if (!q) return sessions
+        return sessions.filter(s => {
+            const title = String(s.title || '').toLowerCase()
+            const desc = String(s.description || '').toLowerCase()
+            const category = String(s.category || '').toLowerCase()
+            return (
+                title.includes(q) ||
+                desc.includes(q) ||
+                category.replace('_', ' ').includes(q)
+            )
+        })
+    }, [sessions, searchQuery])
+
     return (
         <>
         <div className='topbar'>
             <div className='brand'>Skilllift</div>
-            <input className='search' placeholder='Search sessions...' />
-            <div className='filters'>
-                <span>Credits: {credits}</span>
-                <span style={{ marginLeft: 12 }}>Streak: {streak}🔥</span>
-            </div>
+            <input
+                className='search'
+                placeholder='Search sessions...'
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+            />
         </div>
         <div className='sessions-container'>
-            {sessions.map(s => (
+            {filteredSessions.map(s => (
                 <Item
                     key={s.id}
                     title={s.title}

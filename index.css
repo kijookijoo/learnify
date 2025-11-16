@@ -1,3 +1,15 @@
+:root {
+    --bg: #e9f7ef;
+    --surface: #ffffff;
+    --surface-2: #f6fff9;
+    --text: #1f2937;
+    --muted: #6b7280;
+    --primary: #06d6a0;      /* green */
+    --accent: #ef476f;       /* pink/red */
+    --warn: #ffd166;         /* yellow */
+    --ring: rgba(6, 214, 160, 0.35);
+    --shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
 html, body, #root {
     height: 100%;
     width: 100%;
@@ -9,6 +21,18 @@ body {
     font-family: "Elms Sans", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    background-color: #e9f7ef; /* warm light green */
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+/* Utility */
+.card {
+    background: var(--surface);
+    border-radius: 14px;
+    box-shadow: var(--shadow);
+}
+
+input, button, select {
+    font-family: inherit;
 }
 
