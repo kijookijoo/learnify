@@ -1,0 +1,43 @@
+.filterbar-container {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin: 8px 0 16px 0;
+}
+
+.filter-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.filter-label {
+    color: #333;
+    font-weight: 600;
+}
+
+.segmented {
+    display: inline-flex;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.seg {
+    background: #fafafa;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.seg.active {
+    background: #ffd166; /* yellow from palette */
+}
+
+.select {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+

@@ -1,0 +1,14 @@
+html, body, #root {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    font-family: "Elms Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: #e9f7ef; /* warm light green */
+}
+

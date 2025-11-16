@@ -1,0 +1,78 @@
+text {
+  font-family: "Elms Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.header-container {
+    width: 100%;
+    display: block;
+}
+
+.page-content {
+    margin-left: 240px;
+    padding: 16px;
+    background-color: transparent;
+    box-sizing: border-box;
+    width: calc(100vw - 240px);
+}
+
+.sessions-container {
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 40px;
+    row-gap: 16px;
+    justify-content: stretch;
+    padding: 24px;
+}
+
+.badges-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 40px;
+    row-gap: 16px;
+    justify-content: stretch;
+    padding: 24px;
+}
+
+.topbar {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 12px 16px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.brand {
+    font-weight: 700;
+}
+
+.search {
+    flex: 1;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.filters {
+    white-space: nowrap;
+    color: #666;
+}
+
+.fab {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border: none;
+    background: #111;
+    color: #fff;
+    font-size: 28px;
+    line-height: 0;
+    cursor: pointer;
+}
